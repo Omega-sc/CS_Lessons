@@ -1,0 +1,108 @@
+html{
+box-sizing: border-box;
+height: 100%;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+
+}
+body
+{
+justify-content: center;
+background: linear-gradient(320deg, rgb(140, 250, 140) , rgb(94, 94, 242) , rgb(255, 117, 223));
+display: flex;
+font-family:"Trebuchet MS", Helvetica, sans-serif;
+height: 100vh;
+
+}
+.wrapper{
+    margin-left: 40px;
+    margin-top: 150px;
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    -webkit-backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 50px  solid color(rgb(52, 37, 37));
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    border: 10px solid color(rgb rgb(0, 0, 0));
+    width: 400px;
+    height: 600px;
+    padding: 20px; 
+}
+.screen{
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0, 30px 30px;
+    border: 1px solid rgb(192, 171, 171) ;
+    border-radius: 17px;
+    padding: 20px 15px;
+    font-size: 30px;
+    text-align: right;
+    margin-bottom: 90px;
+    height: 80px;
+}
+
+.calc-button-row{
+    margin-top: 10px;
+    display:flex;
+    justify-content: space-between;
+    margin: 5% , 0%;
+    gap: 5px;
+    
+}
+
+.calc-button{
+    margin-top: 20px;
+    color: rgb(43, 43, 43);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(107, 106, 106, 0.5);
+    border-radius: 40px;
+    flex-basis: 25%;
+    font-size: 25px;
+    font-family: inherit;
+    height: 60px;
+    margin: 5px;
+    transition: background 0.2s color 0.2s;
+    cursor: pointer;
+    
+    padding: 10px;
+    
+}
+.calc-button:hover{
+    margin-top: 20px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background: rgba(198, 198, 198, 0.2);
+    border: 1px solid rgba(107, 106, 106, 0.5);
+    border-radius: 40px;
+    flex-basis: 25%;
+    font-size: 25px;
+    font-family: inherit;
+    height: 60px;
+    margin: 5px;
+    color: rgb(24, 47, 137);
+
+}
+.calc-button:active{
+    margin-top: 20px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background: rgba(35, 25, 25, 0.2);
+    border: 1px solid rgba(107, 106, 106, 0.5);
+    border-radius: 40px;
+    flex-basis: 25%;
+    font-size: 25px;
+    font-family: inherit;
+    height: 60px;
+    margin: 5px;
+    color: rgb(24, 90, 137);
+
+}
