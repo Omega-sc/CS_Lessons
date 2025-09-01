@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <style>
+        .reveal {
+            display: block;
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Verdana, Geneva, Tahoma, sans-serif, Verdana, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .box {
+            width: 400px;
+            height: 500px;
+            background-color: #f8ecec;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 100px auto;
+            padding: 50px 20px 30px 20px;
+        }
+
+        .login {
+            text-align: center;
+            color: #503b3b;
+            margin-bottom: 50px;
+            font-size: 32px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            display: block;
+            width: 80%;
+            margin: 20px auto;
+            padding: 15px;
+            border-radius: 10px;
+            border: 2px solid #ccc;
+            font-size: 16px;
+            transition: border-color 0.3s, color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #0084ff;
+            outline: none;
+            color: rgb(46, 105, 156);
+        }
+
+        .button_login {
+            display:block;
+            margin: 30px auto 0;
+            padding: 15px;
+            width: 100px;
+            background-color: #483a3a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .button_login:hover {
+            background-color: #5a4b4b;
+            opacity: 0.8;
+        }
+
+        .button_login:active {
+            background-color: #6b5c5c;
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 class="login">Login</h1>
+        
+        <input type="text" name="username" id="username" placeholder="Enter your username" required>
+        <div>
+        <input type="password" name="password" id="password" placeholder="Enter your password" required>
+        <button type="button" id="togglePassword" style="background: none; border: none; cursor: pointer;">
+    ✅
+</button>
+</div>
+        
+        <button class="button_login">LOGIN</button>
+    </div>
+    <script>
+document.getElementById("togglePassword").addEventListener("click", function () {
+    const passwordInput = document.getElementById("password");
+
+    // Toggle type
+    const isPassword = passwordInput.type === "password";
+    passwordInput.type = isPassword ? "text" : "password";
+
+    // Change the icon
+    this.textContent = isPassword ? "✅" : "✅";  // Optional: Change icon
+});
+</script>
+
+</body>
+</html>
